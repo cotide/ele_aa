@@ -1,6 +1,7 @@
 # ele_aa
- 
-> ele_aa 统计饿了么订餐AA费用 
+[![Build Status](https://travis-ci.org/cotide/ele_aa.svg?branch=master)](https://travis-ci.org/cotide/ele_aa)
+
+> 饿了么订餐-AA费用统计 
 
 ## 需求
 ![饿了么统计](http://ww1.sinaimg.cn/large/7c2c6ab7gy1fv01ft0qrzj20ku112agw.jpg)
