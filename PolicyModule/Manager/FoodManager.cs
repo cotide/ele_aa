@@ -52,10 +52,10 @@ namespace PolicyModule
             {
                 foreach (var item in Foods)
                 {
-                    Console.WriteLine($"[菜名=]{item.Name}");
-                    Console.WriteLine($"[单价=]{item.AvgMoney}");
-                    Console.WriteLine($"[数量=]{item.Count}");
-                    Console.WriteLine($"[小计(¥)=]{item.SumMony}");
+                    Console.WriteLine($"[菜名=] {item.Name}");
+                    Console.WriteLine($"[单价=] ¥{item.AvgMoney}");
+                    Console.WriteLine($"[数量=] {item.Count}");
+                    Console.WriteLine($"[小计=] ¥{item.SumMony}");
                 }
                 
             }

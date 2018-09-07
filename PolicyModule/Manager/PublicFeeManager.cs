@@ -52,8 +52,8 @@ namespace PolicyModule
         public void PrintFee(){
             foreach (var item in _publicFee)
             { 
-                Console.WriteLine($"[公费名称=]{item.FeeName}");
-                Console.WriteLine($"[金额(¥)=]{item.Fee()}");
+                Console.WriteLine($"[公摊名称=] {item.FeeName}");
+                Console.WriteLine($"[金额=] ¥{item.Fee()}");
             } 
         }
     }

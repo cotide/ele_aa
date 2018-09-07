@@ -66,13 +66,13 @@ namespace PolicyModule
 
         public void PrintDetail()
         {
-            Console.WriteLine($"[菜式=]{Name}"); 
-            Console.WriteLine($"[数量=]{Count}");
-            Console.WriteLine($"[总实付=]{SumResultMoney}");
-            Console.WriteLine($"[每位/原价金额(¥)=]{AvgMoney}");
-            Console.WriteLine($"[每位/公摊金额(¥)=]{AvgPublicFee}");
-            Console.WriteLine($"[每位/折扣金额(¥)=]{-AvgDisCount}");
-            Console.WriteLine($"[每位/实付(¥)=]{AvgResultMoney}"); 
+            Console.WriteLine($"[菜式=] {Name}"); 
+            Console.WriteLine($"[数量=] {Count}");
+            Console.WriteLine($"[总实付=] ¥{SumResultMoney}");
+            Console.WriteLine($"[每位/原价金额=] ¥{AvgMoney}");
+            Console.WriteLine($"[每位/公摊金额=] ¥{AvgPublicFee}");
+            Console.WriteLine($"[每位/折扣金额=] ¥{-AvgDisCount}");
+            Console.WriteLine($"[每位/实付=] ¥{AvgResultMoney}"); 
             Console.WriteLine("------------------------------");
              
         }

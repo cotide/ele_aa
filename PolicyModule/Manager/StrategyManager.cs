@@ -46,8 +46,8 @@ namespace PolicyModule
         public void PrintDiscount(){   
             foreach (var item in _strategys)
             {
-                Console.WriteLine($"[折扣名称=]{item.DiscountName}");  
-                Console.WriteLine($"[金额(¥)=]{item.Discount()}");  
+                Console.WriteLine($"[折扣名称=] {item.DiscountName}");  
+                Console.WriteLine($"[金额=] ¥{item.Discount()}");  
             } 
         }
     }

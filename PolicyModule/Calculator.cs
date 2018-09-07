@@ -95,34 +95,34 @@ namespace PolicyModule
             
             // 菜式
             // 公费 
-            Console.WriteLine("====== 基本信息 ======");
+            Console.WriteLine("----------[基本信息]----------");
             _foodManager.PrintDetail(); 
-            Console.WriteLine("[总菜价(原价)(¥)=]"+_foodManager.GetSumMoney()); 
+            Console.WriteLine("[总菜价(原价)=] ¥"+_foodManager.GetSumMoney()); 
 
                
-            // 公费 
+            // 公摊信息 
             if (_publicFeeManager.IsHavePublicFee)
             {
-                Console.WriteLine("------------------------------");
+                Console.WriteLine("----------[公摊信息]----------");
                  _publicFeeManager.PrintFee();  
-                Console.WriteLine("[总公摊费用(¥)=]"+_publicFeeManager.GetSumFee()); 
+                Console.WriteLine("[总公摊费用=] ¥"+_publicFeeManager.GetSumFee()); 
                 
             } 
             // 折扣
             if (_strategyManager.IsHaveDiscount)
             { 
                 
-                Console.WriteLine("------------------------------");
+                Console.WriteLine("----------[折扣信息]----------");
                 _strategyManager.PrintDiscount(); 
-                Console.WriteLine("[总折扣(¥)=]"+_strategyManager.GetSumDiscount()); 
+                Console.WriteLine("[总折扣=] ¥"+_strategyManager.GetSumDiscount()); 
             } 
             
-            Console.WriteLine("====== 结算 ======");
+            Console.WriteLine("----------[实付结算]----------");
             foreach (var item in result)
             { 
                 item.PrintDetail();   
             }
-            Console.WriteLine("[总实付(¥)=]"+ result.Sum(x=>x.SumResultMoney)); 
+            Console.WriteLine("[总实付=] ¥"+ result.Sum(x=>x.SumResultMoney)); 
         }
         
         
